@@ -196,12 +196,18 @@
   <div id="mainDashboard" class="hidden min-h-screen flex flex-col transition-opacity duration-700 opacity-0">
     <!-- HEADER -->
     <header class="glass-card sticky top-0 z-40 border-b border-white/10 rounded-none px-4 lg:px-8 py-3.5">
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <img src="https://i.ibb.co/Qv1prRCP/685-CF451-DA11-4077-A7-E3-9-AA7439-E37-D7.png" alt="Logo" class="w-10 h-10 object-contain">
-          <!-- Đã xóa phần text ở đây theo yêu cầu -->
+      <div class="max-w-7xl mx-auto flex items-center justify-between relative min-h-[44px]">
+        
+        <!-- Placeholder trái để cân bằng layout flex -->
+        <div class="w-10"></div> 
+
+        <!-- Logo (Đặt chính giữa và to hơn) -->
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+          <img src="https://i.ibb.co/Qv1prRCP/685-CF451-DA11-4077-A7-E3-9-AA7439-E37-D7.png" alt="Logo" class="w-16 h-16 object-contain drop-shadow-[0_0_10px_rgba(245,158,11,0.15)]">
         </div>
-        <div class="flex items-center gap-4">
+
+        <!-- Các nút bên phải -->
+        <div class="flex items-center gap-4 relative z-10">
           <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/5">
             <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
             <span class="text-xs text-gray-300">Xin chào, <strong class="gold-gradient-text">Admin</strong></span>
@@ -210,6 +216,7 @@
             <i data-lucide="log-out" class="w-4 h-4"></i>
           </button>
         </div>
+
       </div>
     </header>
 
