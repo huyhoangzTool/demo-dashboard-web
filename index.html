@@ -143,7 +143,7 @@
         <p class="text-xs text-gray-400 mt-2">Vui lòng xác thực tài khoản quản trị viên</p>
       </div>
 
-      <!-- Form Đăng Nhập (Đã xóa onsubmit inline) -->
+      <!-- Form Đăng Nhập -->
       <form id="loginForm" class="space-y-5">
         <div>
           <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Tài khoản</label>
@@ -199,13 +199,7 @@
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <div class="flex items-center gap-3">
           <img src="https://i.ibb.co/Qv1prRCP/685-CF451-DA11-4077-A7-E3-9-AA7439-E37-D7.png" alt="Logo" class="w-10 h-10 object-contain">
-          <div>
-            <h2 class="font-bold text-base tracking-wide flex items-center gap-2">
-              Bot Control Center
-              <span class="px-2 py-0.5 text-[10px] bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full font-semibold">Active</span>
-            </h2>
-            <p class="text-[11px] text-gray-400">Cloudflare Workers Webhook</p>
-          </div>
+          <!-- Đã xóa phần text ở đây theo yêu cầu -->
         </div>
         <div class="flex items-center gap-4">
           <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/5">
@@ -303,7 +297,7 @@
     </main>
   </div>
 
-  <!-- SCRIPT XỬ LÝ (SẠCH SẼ, KHÔNG LỖI INLINE) -->
+  <!-- SCRIPT XỬ LÝ -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Khởi tạo Icon
@@ -391,7 +385,7 @@
           leaf.style.height = `${size}rem`;
           leaf.style.left = `${Math.random() * 100}vw`;
           
-          // Phân lớp độ mờ và màu sắc vàng (amber, gold, yellow)
+          // Phân lớp độ mờ và màu sắc vàng
           leaf.style.opacity = Math.random() * 0.6 + 0.4;
           const colors = ['text-amber-400', 'text-amber-500', 'text-amber-600', 'text-yellow-400'];
           leaf.classList.add(colors[Math.floor(Math.random() * colors.length)]);
@@ -427,7 +421,7 @@
         });
       });
 
-      // 6. Xử lý form gửi thông báo (Ngăn tải lại trang)
+      // 6. Xử lý form gửi thông báo
       document.getElementById('broadcastForm').addEventListener('submit', (e) => {
         e.preventDefault();
         alert('✅ Đã phát lệnh gửi tin nhắn thành công!');
